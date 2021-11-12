@@ -1,4 +1,4 @@
---Creación tabla de usuarios
+--CreaciÃ³n tabla de usuarios
 create table usuarios (
 	usuario_id numeric(4,0) constraint pk_usuarios primary key,
 	genero varchar(20),
@@ -12,7 +12,7 @@ alter table usuarios alter column usuario_id
 set default nextval('usuarios_id_usuario_seq');
 
 
---Creación tabla perfil_usuario que contiene la información de las preguntas generales
+--CreaciÃ³n tabla perfil_usuario que contiene la informaciÃ³n de las preguntas generales
 create table perfil_usuario (
 	perfil_usuario_id numeric(4) constraint pk_perfil_usuario primary key,
 	usuario_id numeric(4) references usuarios (usuario_id) not null,
