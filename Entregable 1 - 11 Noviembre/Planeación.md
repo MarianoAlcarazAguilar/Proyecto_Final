@@ -63,6 +63,7 @@ Aquí van preguntas de dónde se meten a internet, cuándo, cuánto tiempo, disp
 > - Computadora portatil
 > - Tablet
 > - Consola de videojuegos
+> - Otro
 > - Ninguno
 
 > Selecciona el dispositivo con el que más accedes a internet:
@@ -71,14 +72,15 @@ Aquí van preguntas de dónde se meten a internet, cuándo, cuánto tiempo, disp
 > - Computadora portatil
 > - Tablet
 > - Consola de videojuegos
+> - Otro
 > - Ninguno
 
 > ¿Cuánto tiempo al día utilizas tus dispositivos aproximadamente?
 > - Menos de 1 hora
-> - 1 a 2 horas
-> - 2 a 3 horas
-> - 3 a 5 horas
-> - 6 a 8 horas
+> - 1 - 2 horas
+> - 2 - 3 horas
+> - 3 - 5 horas
+> - 6 - 8 horas
 > - Más de 8 horas
 
 > Selecciona los permisos que generalmente otorgas a tus aplicaciones:
@@ -86,14 +88,22 @@ Aquí van preguntas de dónde se meten a internet, cuándo, cuánto tiempo, disp
 > - Micrófono
 > - Ubicación
 > - Galería (Fotos)
+> - Contactos
+
+> Para el permiso de la ubicación, ¿cuál de las siguientes opciones utilizas más?
+> - Siempre
+> - Solo al usar
+> - Nunca
 
 > ¿Tiene software antivirus instalado en tu computadora?
 > - Sí
 > - No
 
 > Al conectarte a internet, ¿qué tipo de conexión es la que más utilizas?
-> - Red pública 
-> - Red privada (como datos móviles, o Wi-Fi en tu casa o trabajo)
+> - Red privada (como datos móviles, o Wi-Fi en tu casa)
+> - Red en tu trabajo o universidad
+> - Red en espacios públicos (como conexión WiFi del gobierno)
+> - Otra
 > - No sé
 
 ### Uso de información en aplicaciones o sitios web
@@ -103,7 +113,7 @@ De acuerdo a varios estudios, se ha mostrado que la mayoría de la gente no est�
 es por ello que hemos considerado importante desarrollar una sección que se pregunte sobre este tema. Además de ello, esta sección pretende formarse una noción general del
 perfil del usuario en cuanto a seguridad.
 
-> En una escala del 1 al 5, ¿qué tanta confianza te da ingresar cada uno de los siguientes datos en sitios web? (1 es nada seguro, 5 es plena confianza)
+> ¿Qué tanta confianza te da ingresar cada uno de los siguientes datos en sitios web? 
 >  - Nombre
 >  - Correo
 >  - Número de teléfono
@@ -111,48 +121,43 @@ perfil del usuario en cuanto a seguridad.
 >  - Fotografía de una identificación
 >  - Dirección
 >  - Fecha de nacimiento
->  - Ocupación
 
 > ¿Qué tanto conocimiento tienes sobre ciberseguridad?
 > - Mucho
 > - Poco
 > - Nada
 
-> En una escala del 1 al 5, ¿qué tan bien informado te consideras sobre el uso que se hace de la información personal que ingresas en línea? (1 es nada informado, 5 es totalmente informado)
+> ¿Qué tan bien informado te consideras sobre el uso que se hace de la información personal que ingresas en línea?
 
-> En una escala del 1 al 5, al ingresar tus datos ¿qué tanto confías en que las aplicaciones y servicios en línea les van a dar un buen uso? (1 es nula confianza, 5 es plena confianza) 
+> Al ingresar tus datos, ¿qué tanto confías en que las aplicaciones y servicios en línea les van a dar un buen uso?
 
-> Suponiendo que la página web comparta tu información con terceros, del 1 al 5 qué tan de acuerdo estás con esto (1 totalmente en desacuerdo, 5 completamente de acuerdo)
+> Suponiendo que la página web comparta tu información con terceros, del 1 al 5 qué tan de acuerdo estás con esto
 
 > ¿Sabes qué son las cookies?
 > - Sí
 > - No
 
-> Cuando te aparece en una página web una solicitud para aceptar cookies, ¿qué haces?
+> ¿Sabes qué son las cookies?
+> - Sí
+> - No
+
+> Cuando te aparece en una página web una solicitud para aceptar cookies
 > - Las aceptas
 > - Las configuras
 > - No las aceptas
 
-> Cuando te solicitan aceptar los términos y condiciones de algún sitio web ¿cuál de las siguientes opciones realizas?
-  ##### a
-> - Siempre las lees
-> - Casi siempre las lees
-> - Casi nunca las lees
-> - Nunca las lees
+> Cuando te solicitan aceptar los términos y condiciones de algún sitio web 
+  ##### ¿Lees los términos y condiciones?
+> - Siempre
+> - Casi siempre
+> - Casi nunca
+> - Nunca
 
-  ##### b
-> - Siempre las aceptas
-> - Casi siempre las aceptas
-> - Casi nunca las aceptas
-> - Nunca las aceptas
-
-> Selecciona en cuáles de las siguientes situaciones te has encontrado:
-> - Cargos sin autorizar
-> - Fraude en alguna compra
-> - Robo de indentidad
-> - Extorsión por teléfono 
-> - Extorsión por mensaje (correo)
-> - Robo de contraseñas
+  ##### ¿Aceptas los términos y condiciones?
+> - Siempre
+> - Casi siempre
+> - Casi nunca
+> - Nunca
 
 ### Uso de información personal en redes sociales
 
@@ -164,13 +169,21 @@ perfil del usuario en cuanto a seguridad.
 > - Twitter
 > - WhatsApp
 > - TikTok
-> - Tinder, Bumble, etc.
+> - Aplicaciones de citas
+
+> ¿Cuánto tiempo al día utilizas tus redes?
+> - Menos de 1 hora
+> - 1 - 2 horas
+> - 2 - 3 horas
+> - 3 - 5 horas
+> - 6 - 8 horas
+> - Más de 8 horas
 
 > ¿Cómo mantienes tus redes sociales?
 > - Privadas
 > - Públicas
 
-> En una escala del 1 al 5, ¿qué tanto te preocupa el uso que se le pueda dar a tu información en redes sociales? (1 es nada informado, 5 es totalmente informado)
+> ¿Qué tanto te preocupa el uso que se le puede dar a tu información en redes sociales?
 
 > Por miedo al mal uso de tu información, ¿cuáles de los siguientes datos no ingresas en tus redes sociales?
 > - Nombre
@@ -178,6 +191,13 @@ perfil del usuario en cuanto a seguridad.
 > - Número de teléfono
 > - Edad
 > - Dirección
+
+> Selecciona en cuáles de las siguientes situaciones te has encontrado:
+> - Extorsión por teléfono
+> - Extorsión por mensaje (correo)
+> - Robo de contraseñas
+> - Acoso en tus redes sociales
+> - Accesos no autorizados a tus redes sociales
 
 > ¿Qué opinas sobre el uso de tu historial de búsqueda para mostrarte contenido que te pueda interesar?
 > - Estoy de acuerdo
@@ -213,10 +233,25 @@ analizar cómo la privacidad puede hacer que compren en línea o no lo hagan (Ra
 >  - No
 >  - No sé
 
-> En una escala del 1 al 5, ¿qué tan seguro te sientes respecto a los siguientes puntos en tus compras en línea? (1 es nada seguro, 5 es completamente seguro)
->  - Que la compra que estás realizando no sea un fraude
->  - Que tu información personal no sea robada
->  - Que tus datos sean tratados responsablemente
+> ¿Qué dato ha sido?
+> - Nombre
+> - Correo
+> - Número de teléfono
+> - Tarjeta de crédito
+> - Fotografía de una identificación
+> - Dirección
+> - Fecha de nacimiento
+> - Otro
+
+> Selecciona en cuáles de las siguientes situaciones te has encontrado:
+> - Cargos sin autorizar
+> - Fraude en alguna compra
+> - Robo de identidad
+
+> Al comprar en línea, ¿qué tanta seguridad tienes de que no te vayas a encontrar en los siguientes escenarios?
+>  - Que la compra que estás realizando sea un fraude
+>  - Que tu información personal sea robada
+>  - Que tus datos no sean tratados responsablemente
 
 > ¿Cuál de las siguientes formas de pago utilizas más (en línea)?
 > - Tarjeta de crédito/débito
@@ -226,9 +261,13 @@ analizar cómo la privacidad puede hacer que compren en línea o no lo hagan (Ra
 > - Efectivo en puntos de pago (Oxxo, 7eleven, ...)
 > - Otro
 
-> Si un sitio web acepta PayPal ¿aumenta tu confianza para hacer compras en ese sitio?
-> - Sí
-> - No
+> ¿Cuál de las siguientes formas de pago te da más confianza?
+> - Tarjeta de crédito/débito
+> - Transferencia bancaria
+> - Paypal/Apple Pay
+> - Tarjeta digital
+> - Efectivo en puntos de pago (Oxxo, 7eleven, ...)
+> - Otro
 
 > Selecciona cuál de las siguientes opciones haría que no compres en una tienda en línea por miedo al mal manejo de tu información personal
 >  - No haber escuchado de la página web
