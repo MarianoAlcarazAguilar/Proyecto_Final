@@ -6,33 +6,33 @@ insert into area_estudio (descripcion) values
 ('Salud y Medicina');
 
 insert into dispositivos (nombre) values
-('TelÈfono inteligente'),
+('Tel√©fono inteligente'),
 ('Computadora de escritorio'),
-('Computadora port·til'),
+('Computadora port√°til'),
 ('Tablet'),
 ('Consola de Videojuegos'),
 ('Otro');
 
 insert into permisos (descripcion) values
-('C·mara'),
-('MicrÛfono'),
-('UbicaciÛn'),
-('GalerÌa (Fotos)'),
+('C√°mara'),
+('Micr√≥fono'),
+('Ubicaci√≥n'),
+('Galer√≠a (Fotos)'),
 ('Contactos');
 
 insert into escalares_web (pregunta) values
 ('Confianza en ingresar NOMBRE'),
 ('Confianza en ingresar CORREO'),
-('Confianza en ingresar N⁄MERO DE TEL…FONO'),
-('Confianza en ingresar TARJETA DE CR…DITO'),
-('Confianza en ingresar FOTOGRAFÕA DE UNA IDENTIFICACI”N'),
-('Confianza en ingresar DIRECCI”N'),
+('Confianza en ingresar N√öMERO DE TEL√âFONO'),
+('Confianza en ingresar TARJETA DE CR√âDITO'),
+('Confianza en ingresar FOTOGRAF√çA DE UNA IDENTIFICACI√ìN'),
+('Confianza en ingresar DIRECCI√ìN'),
 ('Confianza en ingresar FECHA DE NACIMIENTO'),
-('INFORMADO SOBRE EL USO de tu informaciÛn ingresada'),
-('Confianza en que har·n BUEN USO DE TU INFORMACI”N'),
+('INFORMADO SOBRE EL USO de tu informaci√≥n ingresada'),
+('Confianza en que har√°n BUEN USO DE TU INFORMACI√ìN'),
 ('De acuerdo con COMPARTIR CON TERCEROS'),
-('Frecuencia de LEER T…RMINOS Y CONDICIONES'),
-('Frecuencia de ACEPTAR T…RMINOS Y CONDICIONES');
+('Frecuencia de LEER T√âRMINOS Y CONDICIONES'),
+('Frecuencia de ACEPTAR T√âRMINOS Y CONDICIONES');
 
 insert into redes (descripcion) values
 ('Facebook'),
@@ -43,24 +43,24 @@ insert into redes (descripcion) values
 ('Apps de Citas');
 
 insert into escalares_social_media (pregunta) values 
-('PreocupaciÛn USO INFORMACI”N en redes sociales');
+('Preocupaci√≥n USO INFORMACI√ìN en redes sociales');
 
 insert into datos (descripcion) values 
 ('Nombre'),
 ('Correo'),
-('N˙mero de TelÈfono'),
+('N√∫mero de Tel√©fono'),
 ('Edad'),
-('DirecciÛn'),
-('Tarjeta de CrÈdito'),
-('FotografÌa de una ID'),
+('Direcci√≥n'),
+('Tarjeta de Cr√©dito'),
+('Fotograf√≠a de una ID'),
 ('Fecha de nacimiento'),
 ('Ninguno'),
 ('Otro');
 
 insert into situaciones_sm (descripcion) values 
-('ExtorsiÛn por telÈfono'),
-('ExtorsiÛn por mensaje (correo)'),
-('Robo de constraseÒas'),
+('Extorsi√≥n por tel√©fono'),
+('Extorsi√≥n por mensaje (correo)'),
+('Robo de constrase√±as'),
 ('Accesos no autorizados'),
 ('Acoso o bullying'),
 ('Ninguno');
@@ -73,11 +73,11 @@ insert into situaciones_ec (descripcion) values
 
 insert into escalares_e_commerce (descripcion) values 
 ('Seguridad compra NO FRAUDE'),
-('Seguridad informaciÛn NO ROBADA'),
+('Seguridad informaci√≥n NO ROBADA'),
 ('Seguridad datos TRATADOS RESPONSABLEMENTE');
 
 insert into forma_pago (nombre) values 
-('Tarjeta de crÈdito o dÈbito'),
+('Tarjeta de cr√©dito o d√©bito'),
 ('Transferencia bancaria'),
 ('PayPal o ApplePay'),
 ('Tarjeta digital'),
@@ -86,9 +86,9 @@ insert into forma_pago (nombre) values
 
 insert into razones (descripcion) values 
 ('No certificada digitalmente'),
-('No haber escuchado p·gina web'),
+('No haber escuchado p√°gina web'),
 ('Haber tenido mala experiencia'),
 ('Haber escuchado mala experiencia'),
-('P·gina web no estÈtica'),
+('P√°gina web no est√©tica'),
 ('Ninguno');
 
