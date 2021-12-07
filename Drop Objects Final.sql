@@ -1,0 +1,44 @@
+--Drop Tables
+drop table area_estudio cascade;
+drop table datos cascade;
+drop table dispositivos cascade;
+drop table e_commerce cascade;
+drop table escalares_e_commerce cascade;
+drop table escalares_social_media cascade;
+drop table escalares_web cascade;
+drop table forma_pago cascade;
+drop table perfil_usuario cascade;
+drop table perfil_permisos cascade;
+drop table razones_ec cascade;
+drop table redes cascade;
+drop table respuestas_e_commerce cascade;
+drop table respuestas_social_media cascade;
+drop table respuestas_web cascade;
+drop table situaciones_ec cascade;
+drop table situaciones_sm cascade;
+drop table social_media cascade;
+drop table usuario_dispositivos cascade;
+drop table usuarios cascade;
+drop table web cascade;
+drop table datos_no_ingresado cascade;
+
+--Drop Sequences
+drop sequence usuarios_seq;
+drop sequence usuario_dispositivos_seq;
+drop sequence area_estudio_seq;
+drop sequence perfil_usuario_seq;
+drop sequence dispositivos_seq;
+drop sequence perfil_permisos_seq;
+drop sequence social_media_seq;
+drop sequence redes_seq;
+drop sequence escalares_social_media_seq;
+drop sequence web_seq;
+drop sequence escalares_web_seq;
+drop sequence e_commerce_seq;
+drop sequence forma_pago_seq;
+drop sequence escalares_e_commerce_seq;
+drop sequence datos_seq;
+drop sequence situaciones_sm_seq;
+drop sequence situaciones_ec_seq;
+drop sequence datos_no_ingresado_seq;
+drop sequence razones_ec_seq;

@@ -1,0 +1,45 @@
+--Delete Data
+alter table e_commerce drop constraint e_commerce_dato_evitar_compra_fkey;
+alter table e_commerce drop constraint e_commerce_pago_confiable_fkey;
+alter table e_commerce drop constraint e_commerce_pago_favorito_fkey;
+alter table e_commerce drop constraint e_commerce_usuario_id_fkey;
+alter table perfil_usuario drop constraint perfil_usuario_dispositivo_fav_fkey;
+alter table perfil_usuario drop constraint perfil_usuario_usuario_id_fkey;
+alter table perfil_permisos drop constraint perfil_permisos_perfil_usuario_id_fkey;
+alter table situaciones_ec drop constraint situaciones_ec_e_commerce_id_fkey;
+alter table datos_no_ingresado drop constraint datos_no_ingresado_social_media_id_fkey;
+alter table razones_ec drop constraint razones_ec_e_commerce_id_fkey;
+alter table respuestas_e_commerce drop constraint respuestas_e_commerce_e_commerce_id_fkey;
+alter table respuestas_e_commerce drop constraint respuestas_e_commerce_escalares_e_commerce_id_fkey;
+alter table respuestas_social_media drop constraint respuestas_social_media_escalares_social_media_id_fkey;
+alter table respuestas_social_media drop constraint respuestas_social_media_social_media_id_fkey;
+alter table respuestas_web drop constraint respuestas_web_escalares_web_id_fkey;
+alter table respuestas_web drop constraint respuestas_web_web_id_fkey;
+alter table social_media drop constraint social_media_usuario_id_fkey;
+alter table usuario_dispositivos drop constraint usuario_dispositivos_usuario_id_fkey;
+alter table usuarios drop constraint usuarios_area_estudio_id_fkey;
+alter table web drop constraint web_usuario_id_fkey;
+
+
+delete from area_estudio ;
+delete from datos ;
+delete from dispositivos ;
+delete from e_commerce ;
+delete from escalares_e_commerce ;
+delete from escalares_social_media ;
+delete from escalares_web ;
+delete from forma_pago ;
+delete from perfil_usuario ;
+delete from razones_ec ;
+delete from razones_ec ;
+delete from redes ;
+delete from respuestas_e_commerce ;
+delete from datos_no_ingresado ;
+delete from respuestas_social_media ;
+delete from respuestas_web ;
+delete from situaciones_ec ;
+delete from situaciones_sm ;
+delete from social_media ;
+delete from usuario_dispositivos ;
+delete from usuarios ;
+delete from web ;
