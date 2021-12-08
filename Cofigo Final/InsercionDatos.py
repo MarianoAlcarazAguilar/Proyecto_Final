@@ -191,7 +191,18 @@ for i in range(len(datos)):
     respuestas_e_commerce += "("+str(i+1)+", "+str(2)+", "+str(datos["ConfNoRobo"][i])+"), "
     respuestas_e_commerce += "("+str(i+1)+", "+str(3)+", "+str(datos["ConfBienDatos"][i])+")"
 
-    cur.execute (respuestas_e_commerce)    
+    cur.execute (respuestas_e_commerce)   
+    
+datos2 = pd.read_csv("Datos_limpios_no_lic.csv")
+
+for j in range(len(datos2)):
+    usuarios_no_lic = "INSERT INTO encuesta.usuarios_no_lic (genero, edad, estado_republica"
+    usuarios_no_lic += ") values ('"+str(datos2["Genero"][j])+"', "
+    usuarios_no_lic += str(datos2["Edad"][j])+",'"+str(datos2["Estado"][j])+"')"
+   
+    cur.execute (usuarios_no_lic)
+    
+conn.commit()
 
 
 conn.commit()
