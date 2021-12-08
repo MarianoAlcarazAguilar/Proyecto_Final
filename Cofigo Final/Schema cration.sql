@@ -10,6 +10,17 @@ create sequence usuarios_seq start 1 increment 1;
 alter table usuarios alter column usuario_id
 set default nextval('usuarios_seq');
 
+create table usuarios_no_lic (
+	usuario_id numeric(4) constraint pk_usuarios_no_lic primary key,
+	genero varchar(50) not null,
+	edad numeric(2) not null,
+	estado_republica varchar(50) not null
+);
+
+create sequence usuarios_no_lic_seq start 1 increment 1;
+alter table usuarios_no_lic alter column usuario_id
+set default nextval('usuarios_no_lic_seq');
+
 create table area_estudio (
 	area_estudio_id numeric(4) constraint pk_area_estudio primary key,
 	descripcion varchar(50) not null
