@@ -159,7 +159,7 @@ create table respuestas_web (
 create table e_commerce (
 	e_commerce_id numeric(4) constraint pk_e_commerce primary key,
 	usuario_id numeric(4) references usuarios (usuario_id) not null,
-	porcentaje_compras numeric(4) not null,
+	porcentaje_compras numeric(4, 3) not null,
 	frecuencia varchar(50) not null,
 	dato_evitar_compra boolean not null
 );
