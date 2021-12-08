@@ -1,4 +1,4 @@
---Delete Data
+--Delete Data 
 alter table e_commerce drop constraint e_commerce_dato_evitar_compra_fkey;
 alter table e_commerce drop constraint e_commerce_pago_confiable_fkey;
 alter table e_commerce drop constraint e_commerce_pago_favorito_fkey;
