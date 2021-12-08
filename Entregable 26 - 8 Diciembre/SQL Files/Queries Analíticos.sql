@@ -1,26 +1,26 @@
--- ¿Cuántos estudiantes respondieron la encuesta?
+-- Â¿CuÃ¡ntos estudiantes respondieron la encuesta?
 select count(*)
 from usuarios u;
 
 
--- ¿Cuántos no estudiantes respondieron la encuesta?
+-- Â¿CuÃ¡ntos no estudiantes respondieron la encuesta?
 select count (*)
 from usuarios_no_lic unl;
 
 
--- ¿De cuántos estados tuvimos representación?
+-- Â¿De cuÃ¡ntos estados tuvimos representaciÃ³n?
 select count(*)
 from
 (select estado_republica from usuarios u group by estado_republica) t;
 
 
--- ¿Cuántas mujeres y cuántos hombres?
+-- Â¿CuÃ¡ntas mujeres y cuÃ¡ntos hombres?
 select u.genero, count(*)
 from usuarios u
 group by u.genero;
 
 
--- ¿Estados con mayor representación?
+-- Â¿Estados con mayor representaciÃ³n?
 select u.estado_republica as estado_mas_resp, count(u.estado_republica)
 from usuarios u
 group by u.estado_republica
@@ -28,14 +28,14 @@ order by count(u.estado_republica) desc
 limit 5;
 
 
--- ¿Estudiantes por área de estudio?
+-- Â¿Estudiantes por Ã¡rea de estudio?
 select ae.descripcion, count(ae.area_estudio_id)
 from usuarios u join area_estudio ae on (u.area_estudio_id = ae.area_estudio_id)
 group by ae.descripcion
 order by count(ae.area_estudio_id) desc;
 
 
--- ¿Dispositivos con los que más acceden a internet?
+-- Â¿Dispositivos con los que mÃ¡s acceden a internet?
 select d.nombre as dispositivo_mas_internet, count(d.dispositivo_id)
 from usuarios u join perfil_usuario pu on (u.usuario_id = pu.usuario_id)
 join dispositivos d on (pu.dispositivo_fav = d.dispositivo_id)
@@ -43,30 +43,30 @@ group by d.dispositivo_id
 order by count(d.dispositivo_id) desc;
 
 
--- Promedio en el que se usan los dispositivos al día
+-- Promedio en el que se usan los dispositivos al dÃ­a
 select avg (pu.tiempo_diario)
 from usuarios u join perfil_usuario pu on (u.usuario_id = pu.usuario_id);
 
 
--- ¿Cuántos eligen cada respuesta en la ubicación?
+-- Â¿CuÃ¡ntos eligen cada respuesta en la ubicaciÃ³n?
 select pu.ubicacion, count (*)
 from usuarios u join perfil_usuario pu on (u.usuario_id = pu.usuario_id)
 group by pu.ubicacion
 
 
--- ¿Cuántos tienen y no tienen antivirus?
+-- Â¿CuÃ¡ntos tienen y no tienen antivirus?
 select pu.antivirus , count (*)
 from usuarios u join perfil_usuario pu on (u.usuario_id = pu.usuario_id)
 group by pu.antivirus
 
 
--- ¿Qué tipo de conexión utilizan?
+-- Â¿QuÃ© tipo de conexiÃ³n utilizan?
 select pu.tipo_conexion , count (*)
 from usuarios u join perfil_usuario pu on (u.usuario_id = pu.usuario_id)
 group by pu.tipo_conexion
 
 
--- ¿Qué tanta confianza da ingresar cada uno de los datos?
+-- Â¿QuÃ© tanta confianza da ingresar cada uno de los datos?
 select ew.pregunta as PREGUNTA, avg (rw.respuesta) *100/3 as PROMEDIO
 from usuarios u join web w using (usuario_id)
 join respuestas_web rw using (web_id)
@@ -75,7 +75,7 @@ group by ew.pregunta
 order by ew.pregunta;
 
 
---Relación entre tiempo, confianza e informado?
+--RelaciÃ³n entre tiempo, confianza e informado?
 with 
 informado as (select  pu.tiempo_diario,  avg(rw.respuesta) as informado_prom
 	from perfil_usuario pu join usuarios u using (usuario_id)
@@ -97,7 +97,7 @@ select tiempo_diario, (informado_prom)*100/3 as prom_info, (confianza_prom)*100/
 from informado join confianza using (tiempo_diario);
 
 
---Relación entre informado y confianza
+--RelaciÃ³n entre informado y confianza
 with 
 informado as (select usuario_id, rw.respuesta as resp_info
 	from usuarios u join web w using (usuario_id)
@@ -115,7 +115,7 @@ group by resp_info
 order by resp_info asc;
 
 
---¿Cómo afecta tu acción con cookies qué tan de acuerdo estás con compartir información con terceros?
+--Â¿CÃ³mo afecta tu acciÃ³n con cookies quÃ© tan de acuerdo estÃ¡s con compartir informaciÃ³n con terceros?
 select accion_cookies, avg(respuesta)*100/3 as prom_compartir_con_terceros
 from web w join respuestas_web rw using (web_id)
 join escalares_web ew using (escalares_web_id)
@@ -124,7 +124,7 @@ group by accion_cookies
 order by avg(respuesta) desc;
 
 
---De los que aceptan los términos, qué tantos lo leen
+--De los que aceptan los tÃ©rminos, quÃ© tantos lo leen
 with
 leer as (select usuario_id, rw.respuesta as resp_leer_terminos
 	from usuarios u join web w using (usuario_id)
@@ -144,7 +144,7 @@ order by resp_aceptar_terminos;
 
 
 
---De los que leen los términos, que tantos los aceptan
+--De los que leen los tÃ©rminos, que tantos los aceptan
 with
 leer as (select usuario_id, rw.respuesta as resp_leer_terminos
 	from usuarios u join web w using (usuario_id)
@@ -162,7 +162,7 @@ group by resp_leer_terminos
 order by resp_leer_terminos;
 
 
---De las personas que tienen sus cuentas en privada o pública que tanto les importa su el uso de su información personal en redes
+--De las personas que tienen sus cuentas en privada o pÃºblica que tanto les importa su el uso de su informaciÃ³n personal en redes
 select tipo_redes, avg(respuesta)*100/3 as prom_preocup_info
 from usuarios u join social_media sm using (usuario_id)
 join respuestas_social_media rsm using (social_media_id)
@@ -170,14 +170,14 @@ join escalares_social_media esm using (escalares_social_media_id)
 group by tipo_redes;
 
 
---Cómo afecta tu tiempo en línea tu porcentaje de compras en línea
+--CÃ³mo afecta tu tiempo en lÃ­nea tu porcentaje de compras en lÃ­nea
 select tiempo_diario , avg(ec.porcentaje_compras)*100 as prom_online_compras
 from perfil_usuario pu join usuarios u using (usuario_id)
 join e_commerce ec using (usuario_id)
 group by tiempo_diario
 order by tiempo_diario;
 
---Cómo afecta tu confianza general en tus compras en línea 
+--CÃ³mo afecta tu confianza general en tus compras en lÃ­nea 
 select rw.respuesta as conf_uso_info, avg(ec.porcentaje_compras) * 100 as prom_online_compras
 from escalares_web ew join respuestas_web rw using (escalares_web_id)
 join web w using (web_id)
@@ -200,7 +200,7 @@ group by ss.extorsion_mensaje;
 
 
 --Porcentaje de hombres y mujeres que han sufrido acoso
---Cuántos hombres y mujeres han sufrido acoso
+--CuÃ¡ntos hombres y mujeres han sufrido acoso
 select genero, count(*) as absoluto, count(*)*100/44 as porcentaje
 from usuarios u join social_media sm using (usuario_id)
 join situaciones_sm ss using (social_media_id)
